@@ -1,0 +1,17 @@
+{
+  "lastUpdate": "1405/3/8",
+  "prices": {
+    "wire_2mm": 83000,
+    "wire_3mm": 83000,
+    "wire_4mm": 80000,
+    "galvanized_0.9mm": 120000,
+    "galvanized_1mm": 118000,
+    "galvanized_1.2mm": 118000,
+    "galvanized_1.5mm": 115000,
+    "annealed_1.5mm": 93000,
+    "annealed_1.8mm": 93000,
+    "wool_500g": 153000,
+    "wool_1kg": 153000,
+    "wool_10kg": 152000
+  }
+}
