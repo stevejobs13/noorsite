@@ -1,13 +1,116 @@
 // ========== محصولات ==========
 const products = [
-    { id: 1, title: "مفتول گالوانیره صحافی 1",   description: "مفتول گالوانیزه بابراقیت و درخشنگی بالا مخصوص فنر های صحافی ", details: "ضخامت‌های ۱  میلیمتر - بسته‌بندی ۲۵ کیلوگرمی - گالوانیزه سرد",   image: "images/wire1.jpg", category: "wire" },
-    { id: 2, title: "مفتول گالوانیره صحافی 1.2",   description: "مفتول گالوانیزه بابراقیت و درخشنگی بالا مخصوص فنر های صحافی ", details: "ضخامت‌های 1.2  میلیمتر - بسته‌بندی ۲۵ کیلوگرمی - گالوانیزه سرد", image: "images/wire1.jpg", category: "wire" },
-    { id: 3, title: "مفتول گالوانیره صحافی 1.5",   description: "مفتول گالوانیزه بابراقیت و درخشنگی بالا مخصوص فنر های صحافی ", details: "ضخامت‌های 1.5  میلیمتر - بسته‌بندی ۲۵ کیلوگرمی - گالوانیزه سرد", image: "images/wire1.jpg", category: "wire" },
-    { id: 4, title: "مفتول سیاه ساده", description: "مفتول سیاه ساده در سایز های مختلف قابل استفاده در انواع صنایع", details: "سایز 2.5 تا 4 میلیمتر در بسته بندی های مختلف ", image: "images/normal_wire.jpg", category: "wire" },
-    { id: 5, title: "پشم آهن صنعتی", description: "سیم ظرفشویی(پشم آهن)صنعتی مخصوص صنایع لنت سازی", details: "بسته‌بندی 0/5 تا 10 کیلوگرمی مطابق سفارش شما", image: "images/steel_wool.jpg", category: "fastener" },
-    { id: 6, title: "مفتول آنیل کششی", description: "مفتول آنیل شده کششی با بالاترین کیفیت آنیل و کمترین میزان اکسید ", details: "سایزهای 1.5 تا 2 میلیمتر در کلاف هایی با وزن بیش از 100 کیلو گرم ", image: "images/annealed_wire.jpg", category: "fastener" },
-   // { id: 7, title: "سیم خاردار تیغ دار", description: "سیم خاردار با تیغ‌های تیز و استحکام بالا برای امنیت", details: "سیم ۱۴ میلیمتر - تیغ فاصله ۱۰ سانتی - بسته ۵۰ متری", image: "images/wire3.jpg", category: "wire" },
-   // { id: 8, title: "توری حصاری صنعتی", description: "توری حصاری سنگین با چشمه‌های ریز و استحکام بالا", details: "ارتفاع ۲ متر - چشمه ۳×۳ - مناسب کارخانه‌جات", image: "images/mesh3.jpg", category: "mesh" }
+    {
+        id: 1,
+
+        title: {
+            fa: "مفتول گالوانیزه صحافی 1",
+            ar: "سلك مجلفن للتجليد 1"
+        },
+
+        description: {
+            fa: "مفتول گالوانیزه براق مخصوص فنر صحافی",
+            ar: "سلك مجلفن لامع مخصص لزنبركات التجليد"
+        },
+
+        details: {
+            fa: "ضخامت ۱ میلیمتر - بسته ۲۵ کیلویی",
+            ar: "سماكة 1 مم - عبوة 25 كجم"
+        },
+
+        image: "images/wire1.jpg",
+
+        category: "wire"
+    },
+    {
+        id: 2,
+        title: {
+            fa: "مفتول گالوانیزه صحافی 1.2",
+            ar: "سلك مجلفن للتجليد 1.2"
+        },
+        description: {
+            fa: "مفتول گالوانیزه با براقیت و درخشندگی بالا مخصوص فنرهای صحافی",
+            ar: "سلك مجلفن عالي اللمعان مخصص لزنبركات التجليد"
+        },
+        details: {
+            fa: "ضخامت 1.2 میلیمتر - بسته‌بندی ۲۵ کیلوگرمی - گالوانیزه سرد",
+            ar: "سماكة 1.2 مم - عبوة 25 كغ - مجلفن على البارد"
+        },
+        image: "images/wire1.jpg",
+        category: "wire"
+    },
+
+    {
+        id: 3,
+        title: {
+            fa: "مفتول گالوانیزه صحافی 1.5",
+            ar: "سلك مجلفن للتجليد 1.5"
+        },
+        description: {
+            fa: "مفتول گالوانیزه با براقیت و درخشندگی بالا مخصوص فنرهای صحافی",
+            ar: "سلك مجلفن عالي اللمعان مخصص لزنبركات التجليد"
+        },
+        details: {
+            fa: "ضخامت 1.5 میلیمتر - بسته‌بندی ۲۵ کیلوگرمی - گالوانیزه سرد",
+            ar: "سماكة 1.5 مم - عبوة 25 كغ - مجلفن على البارد"
+        },
+        image: "images/wire1.jpg",
+        category: "wire"
+    },
+
+    {
+        id: 4,
+        title: {
+            fa: "مفتول سیاه ساده",
+            ar: "سلك أسود عادي"
+        },
+        description: {
+            fa: "مفتول سیاه ساده در سایزهای مختلف قابل استفاده در انواع صنایع",
+            ar: "سلك أسود عادي بمقاسات مختلفة مناسب لمختلف الصناعات"
+        },
+        details: {
+            fa: "سایز 2.5 تا 4 میلیمتر در بسته‌بندی‌های مختلف",
+            ar: "مقاسات من 2.5 إلى 4 مم مع عبوات متنوعة"
+        },
+        image: "images/normal_wire.jpg",
+        category: "wire"
+    },
+
+    {
+        id: 5,
+        title: {
+            fa: "پشم آهن صنعتی",
+            ar: "صوف فولاذي صناعي"
+        },
+        description: {
+            fa: "سیم ظرفشویی (پشم آهن) صنعتی مخصوص صنایع لنت‌سازی",
+            ar: "صوف فولاذي صناعي مخصص لصناعة بطانات الفرامل"
+        },
+        details: {
+            fa: "بسته‌بندی 0.5 تا 10 کیلوگرمی مطابق سفارش شما",
+            ar: "عبوات من 0.5 إلى 10 كغ حسب الطلب"
+        },
+        image: "images/steel_wool.jpg",
+        category: "fastener"
+    },
+
+    {
+        id: 6,
+        title: {
+            fa: "مفتول آنیل کششی",
+            ar: "سلك مسحوب ومُلدَّن"
+        },
+        description: {
+            fa: "مفتول آنیل شده کششی با بالاترین کیفیت آنیل و کمترین میزان اکسید",
+            ar: "سلك مُلدَّن مسحوب بأعلى جودة وأقل نسبة أكسدة"
+        },
+        details: {
+            fa: "سایزهای 1.5 تا 2 میلیمتر در کلاف‌هایی با وزن بیش از 100 کیلوگرم",
+            ar: "مقاسات من 1.5 إلى 2 مم في لفائف يزيد وزنها عن 100 كغ"
+        },
+        image: "images/annealed_wire.jpg",
+        category: "fastener"
+    }
 ];
 
 let currentFilter = 'all';
@@ -20,21 +123,18 @@ let translations = { fa: {}, ar: {} }; // مقدار پیش‌فرض خالی
 // لود کردن فایل ترجمه
 async function loadTranslations() {
     try {
-        const response = await fetch('translations.js');
-        if (!response.ok) throw new Error('فایل translations.js پیدا نشد');
-        const scriptText = await response.text();
+        const response = await fetch('translations.json');
 
-        // استخراج آبجکت translations از محتوای فایل
-        const match = scriptText.match(/const translations = ({[\s\S]*?});/);
-        if (match) {
-            translations = eval('(' + match[1] + ')');
+        if (!response.ok) {
+            throw new Error('فایل translations.json پیدا نشد');
         }
 
-        // اعمال ترجمه اولیه
+        translations = await response.json();
+
         updateStaticTexts(currentLang);
 
-        // راه‌اندازی دکمه‌های زبان بعد از لود ترجمه
         initLanguageButtons();
+
     } catch (error) {
         console.error('خطا در لود ترجمه:', error);
     }
@@ -119,8 +219,10 @@ function updateStaticTexts(lang) {
     if (contactTitle) contactTitle.innerHTML = `${t.contact_title} <span class="highlight">تماس</span>`;
     if (contactItems[0]) contactItems[0].textContent = t.contact_phone;
     if (contactItems[1]) contactItems[1].textContent = t.contact_email;
-    if (contactItems[2]) contactItems[2].textContent = t.contact_address_title;
-    if (contactAddressP[2]) contactAddressP[2].textContent = t.contact_address;
+    if (contactItems[2]) contactItems[2].textContent = t.contact_factory_address;
+    if (contactAddressP[3])
+        contactAddressP[3].textContent = t.contact_factory_location;
+
 
     // Footer
     const footerText = document.querySelector('footer .container p:first-child');
@@ -143,22 +245,54 @@ function updateStaticTexts(lang) {
     if (priceFooterDescs[1]) priceFooterDescs[1].textContent = t.price_footer_offer_desc;
     if (priceFooterTitles[2]) priceFooterTitles[2].textContent = t.price_footer_direct_title;
     if (priceFooterDescs[2]) priceFooterDescs[2].textContent = t.price_footer_direct_desc;
+    // دکمه بازگشت به صفحه اصلی
+    const backHomeBtn = document.querySelector('.back-to-home');
+
+    if (backHomeBtn) {
+        const icon = lang === 'fa'
+            ? 'fa-arrow-right'
+            : 'fa-arrow-left';
+
+        backHomeBtn.innerHTML =
+            `<i class="fas ${icon}"></i> ${t.back_to_home}`;
+    }
 }
 
 function switchLanguage(lang) {
     currentLang = lang;
+
+    phraseIndex = 0;
+    charIndex = 0;
+    isDeleting = false;
+
+    if (typedTextElement) {
+        typedTextElement.textContent = '';
+    }
+
     localStorage.setItem('siteLang', lang);
+
+    document.documentElement.lang = lang;
+    document.documentElement.dir = 'rtl';
+
+    document.title =
+        lang === 'fa'
+            ? 'صنایع مفتولی نور'
+            : 'صناعات نور للأسلاك';
 
     const faBtn = document.getElementById('langFa');
     const arBtn = document.getElementById('langAr');
+
     if (faBtn) faBtn.classList.toggle('active', lang === 'fa');
     if (arBtn) arBtn.classList.toggle('active', lang === 'ar');
 
     updateStaticTexts(lang);
 
-    // اگر در صفحه قیمت هستیم، جدول را دوباره بساز (برای ترجمه دکمه درخواست قیمت)
+    if (document.getElementById('productsGrid')) {
+        displayProducts();
+    }
+
     if (document.getElementById('desktopPriceBody')) {
-        loadPrices(); // دوباره قیمت‌ها را لود کن (تابع داخلش از translations استفاده می‌کند)
+        loadPrices();
     }
 }
 
@@ -178,12 +312,25 @@ function initLanguageButtons() {
 
 // ========== تایپینگ افکت ==========
 const typedTextElement = document.getElementById('typed-text');
-const phrases = ['بالاترین کیفیت محصولات مفتولی ','ارسال محصولات به سراسر کشور ' ,'تولید کننده مفتولهای صحافی و صنعتی','۱۵ سال افتخار تولید'];
+const phrases = {
+    fa: [
+        'بالاترین کیفیت محصولات مفتولی',
+        'ارسال محصولات به سراسر کشور',
+        'تولید کننده مفتولهای صحافی و صنعتی',
+        '۱۵ سال افتخار تولید'
+    ],
+    ar: [
+        'أعلى جودة لمنتجات الأسلاك',
+        'شحن المنتجات إلى جميع أنحاء البلاد',
+        'منتج أسلاك التجليد والأسلاك الصناعية',
+        '15 عاماً من الفخر في الإنتاج'
+    ]
+};
 let phraseIndex = 0, charIndex = 0, isDeleting = false;
 
 function typeEffect() {
     if (!typedTextElement) return;
-    const currentPhrase = phrases[phraseIndex];
+    const currentPhrase = phrases[currentLang][phraseIndex];
     if (isDeleting) {
         typedTextElement.textContent = currentPhrase.substring(0, charIndex - 1);
         charIndex--;
@@ -198,7 +345,8 @@ function typeEffect() {
     }
     if (isDeleting && charIndex === 0) {
         isDeleting = false;
-        phraseIndex = (phraseIndex + 1) % phrases.length;
+        const currentPhrases = phrases[currentLang];
+phraseIndex = (phraseIndex + 1) % currentPhrases.length;
     }
     setTimeout(typeEffect, isDeleting ? 50 : 100);
 }
@@ -207,12 +355,12 @@ function typeEffect() {
 function displayProducts() {
     const grid = document.getElementById('productsGrid');
     if (!grid) return;
-    let filteredProducts = products.filter(p => (currentFilter === 'all' || p.category === currentFilter) && (!currentSearch || p.title.includes(currentSearch) || p.description.includes(currentSearch)));
+    let filteredProducts = products.filter(p => (currentFilter === 'all' || p.category === currentFilter) && (!currentSearch || p.title[currentLang].includes(currentSearch) || p.description[currentLang].includes(currentSearch)));
     grid.innerHTML = '';
     filteredProducts.forEach(product => {
         const card = document.createElement('div');
         card.className = 'product-card';
-        card.innerHTML = `<img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy"><div class="product-info"><h3 class="product-title">${product.title}</h3><p class="product-description">${product.description}</p><div class="product-details">${product.details}</div></div>`;
+        card.innerHTML = `<img src="${product.image}" alt="${product.title[currentLang]}" class="product-image" loading="lazy"><div class="product-info"><h3 class="product-title">${product.title[currentLang]}</h3><p class="product-description">${product.description[currentLang]}</p><div class="product-details">${product.details[currentLang]}</div></div>`;
         card.onclick = () => openModal(product);
         grid.appendChild(card);
     });
@@ -223,9 +371,9 @@ function openModal(product) {
     const modal = document.getElementById('productModal');
     if (!modal) return;
     document.getElementById('modalImage').src = product.image;
-    document.getElementById('modalTitle').textContent = product.title;
-    document.getElementById('modalDescription').textContent = product.description;
-    document.getElementById('modalDetails').textContent = product.details;
+    document.getElementById('modalTitle').textContent = product.title[currentLang];
+    document.getElementById('modalDescription').textContent = product.description[currentLang];
+    document.getElementById('modalDetails').textContent = product.details[currentLang];
     modal.style.display = 'flex';
 }
 
@@ -344,7 +492,10 @@ async function loadPrices() {
 
         const lastUpdate = data.lastUpdate || new Date().toLocaleDateString('fa-IR');
         const dateElem = document.getElementById('priceUpdateDate');
-        if (dateElem) dateElem.innerHTML = `<i class="fas fa-calendar-check"></i> آخرین به‌روزرسانی: ${lastUpdate}`;
+        if (dateElem) {
+            dateElem.innerHTML =
+                `<i class="fas fa-calendar-check"></i> ${translations[currentLang].price_last_update}: ${lastUpdate}`;
+        }
 
         const prices = data.prices;
         buildDesktopTable(prices);
@@ -359,54 +510,277 @@ async function loadPrices() {
 }
 
 function buildDesktopTable(prices) {
+
     const desktopBody = document.getElementById('desktopPriceBody');
     if (!desktopBody) return;
 
     const t = translations[currentLang];
 
-    const productsList = [
-        //{ row:1, name:"سیم مفتول سیاه", type:"ضخامت ۱/۵ میلی‌متر", unit:"کیلوگرم", priceKey:"wire_15mm" },
-        { row:1, name:"سیم مفتول سیاه", type:"ضخامت ۲ میلی‌متر", unit:"کیلوگرم", priceKey:"wire_2mm" },
-        { row:2, name:"سیم مفتول سیاه", type:"ضخامت ۳ میلی‌متر", unit:"کیلوگرم", priceKey:"wire_3mm" },
-        { row:3, name:"سیم مفتول سیاه", type:"ضخامت ۴ میلی‌متر", unit:"کیلوگرم", priceKey:"wire_4mm" },
-        { row:4, name:"مفتول گالوانیزه فنر صحافی", type:"ضخامت 0.9 میلی‌متر", unit:"کیلوگرم", priceKey:"galvanized_0.9mm" },
-        { row:5, name:"مفتول گالوانیزه فنر صحافی", type:"ضخامت 1.0 میلی‌متر", unit:"کیلوگرم", priceKey:"galvanized_1mm" },
-        { row:6, name:"مفتول گالوانیزه فنر صحافی", type:"ضخامت 1.2 میلی‌متر", unit:"کیلوگرم", priceKey:"galvanized_1.2mm" },
-        { row:7, name:"مفتول گالوانیزه فنر صحافی", type:"ضخامت 1.5 میلی‌متر", unit:"کیلوگرم", priceKey:"galvanized_1.5mm" },
-        { row:8, name:"مفتول آنیل شده ", type:"ضخامت 1.5 میلی متر", unit:" کیلوگرمی", priceKey:"annealed_1.5mm" },
-        { row:9, name:"مفتول آنیل شده", type:"ضخامت 1.8 میلی متر", unit:" کیلو گرمی", priceKey:"annealed_1.8mm" },
-      //  { row:11, name:"توری جوشی", type:"مش ۱۰×۱۰ - مفتول ۴ میلی", unit:"ورق ۲×۲ متر", priceKey:"welded_10x10" },
-       // { row:12, name:"توری جوشی", type:"مش ۱۵×۱۵ - مفتول ۵ میلی", unit:"ورق ۲×۲ متر", priceKey:"welded_15x15" },
-        { row:10, name:"پشم آهن (سیم ظرفشویی)صنعتی", type:"بسته 500 گرمی", unit:"کیلو گرم", priceKey:"wool_500g" },
-        { row:11, name:"پشم آهن (سیم ظرفشویی)صنعتی", type:"بسته 1 کیلوگرمی", unit:"کیلو گرم ", priceKey:"wool_1kg" },
-        { row:12, name:"پشم آهن (سیم ظرفشویی)صنعتی", type:"بسته 10 کیلوگرمی", unit:"کیلو گرم", priceKey:"wool_10kg" }
+    const priceProducts = [
+
+        {
+            row: 1,
+            category: {
+                fa: "سیم مفتول سیاه",
+                ar: "سلك حديد أسود"
+            },
+            name: {
+                fa: "سیم مفتول سیاه",
+                ar: "سلك حديد أسود"
+            },
+            type: {
+                fa: "ضخامت ۲ میلی‌متر",
+                ar: "سماكة 2 مم"
+            },
+            unit: {
+                fa: "کیلوگرم",
+                ar: "كيلوغرام"
+            },
+            priceKey: "wire_2mm"
+        },
+
+        {
+            row: 2,
+            name: {
+                fa: "سیم مفتول سیاه",
+                ar: "سلك حديد أسود"
+            },
+            type: {
+                fa: "ضخامت ۳ میلی‌متر",
+                ar: "سماكة 3 مم"
+            },
+            unit: {
+                fa: "کیلوگرم",
+                ar: "كيلوغرام"
+            },
+            priceKey: "wire_3mm"
+        },
+
+        {
+            row: 3,
+            name: {
+                fa: "سیم مفتول سیاه",
+                ar: "سلك حديد أسود"
+            },
+            type: {
+                fa: "ضخامت ۴ میلی‌متر",
+                ar: "سماكة 4 مم"
+            },
+            unit: {
+                fa: "کیلوگرم",
+                ar: "كيلوغرام"
+            },
+            priceKey: "wire_4mm"
+        },
+
+        {
+            row: 4,
+            category: {
+                fa: "مفتول گالوانیزه فنر صحافی",
+                ar: "سلك مجلفن لزنبرك التجليد"
+            },
+            name: {
+                fa: "مفتول گالوانیزه فنر صحافی",
+                ar: "سلك مجلفن لزنبرك التجليد"
+            },
+            type: {
+                fa: "ضخامت 0.9 میلی‌متر",
+                ar: "سماكة 0.9 مم"
+            },
+            unit: {
+                fa: "کیلوگرم",
+                ar: "كيلوغرام"
+            },
+            priceKey: "galvanized_0.9mm"
+        },
+
+        {
+            row: 5,
+            name: {
+                fa: "مفتول گالوانیزه فنر صحافی",
+                ar: "سلك مجلفن لزنبرك التجليد"
+            },
+            type: {
+                fa: "ضخامت 1.0 میلی‌متر",
+                ar: "سماكة 1.0 مم"
+            },
+            unit: {
+                fa: "کیلوگرم",
+                ar: "كيلوغرام"
+            },
+            priceKey: "galvanized_1mm"
+        },
+
+        {
+            row: 6,
+            name: {
+                fa: "مفتول گالوانیزه فنر صحافی",
+                ar: "سلك مجلفن لزنبرك التجليد"
+            },
+            type: {
+                fa: "ضخامت 1.2 میلی‌متر",
+                ar: "سماكة 1.2 مم"
+            },
+            unit: {
+                fa: "کیلوگرم",
+                ar: "كيلوغرام"
+            },
+            priceKey: "galvanized_1.2mm"
+        },
+
+        {
+            row: 7,
+            name: {
+                fa: "مفتول گالوانیزه فنر صحافی",
+                ar: "سلك مجلفن لزنبرك التجليد"
+            },
+            type: {
+                fa: "ضخامت 1.5 میلی‌متر",
+                ar: "سماكة 1.5 مم"
+            },
+            unit: {
+                fa: "کیلوگرم",
+                ar: "كيلوغرام"
+            },
+            priceKey: "galvanized_1.5mm"
+        },
+
+        {
+            row: 8,
+            category: {
+                fa: "مفتول آنیل شده",
+                ar: "سلك مُلدَّن"
+            },
+            name: {
+                fa: "مفتول آنیل شده",
+                ar: "سلك مُلدَّن"
+            },
+            type: {
+                fa: "ضخامت 1.5 میلی‌متر",
+                ar: "سماكة 1.5 مم"
+            },
+            unit: {
+                fa: "کیلوگرم",
+                ar: "كيلوغرام"
+            },
+            priceKey: "annealed_1.5mm"
+        },
+
+        {
+            row: 9,
+            name: {
+                fa: "مفتول آنیل شده",
+                ar: "سلك مُلدَّن"
+            },
+            type: {
+                fa: "ضخامت 1.8 میلی‌متر",
+                ar: "سماكة 1.8 مم"
+            },
+            unit: {
+                fa: "کیلوگرم",
+                ar: "كيلوغرام"
+            },
+            priceKey: "annealed_1.8mm"
+        },
+
+        {
+            row: 10,
+            category: {
+                fa: "پشم آهن (سیم ظرفشویی) صنعتی",
+                ar: "صوف الحديد الصناعي"
+            },
+            name: {
+                fa: "پشم آهن (سیم ظرفشویی) صنعتی",
+                ar: "صوف الحديد الصناعي"
+            },
+            type: {
+                fa: "بسته 500 گرمی",
+                ar: "عبوة 500 غرام"
+            },
+            unit: {
+                fa: "کیلوگرم",
+                ar: "كيلوغرام"
+            },
+            priceKey: "wool_500g"
+        },
+
+        {
+            row: 11,
+            name: {
+                fa: "پشم آهن (سیم ظرفشویی) صنعتی",
+                ar: "صوف الحديد الصناعي"
+            },
+            type: {
+                fa: "بسته 1 کیلوگرمی",
+                ar: "عبوة 1 كيلوغرام"
+            },
+            unit: {
+                fa: "کیلوگرم",
+                ar: "كيلوغرام"
+            },
+            priceKey: "wool_1kg"
+        },
+
+        {
+            row: 12,
+            name: {
+                fa: "پشم آهن (سیم ظرفشویی) صنعتی",
+                ar: "صوف الحديد الصناعي"
+            },
+            type: {
+                fa: "بسته 10 کیلوگرمی",
+                ar: "عبوة 10 كيلوغرام"
+            },
+            unit: {
+                fa: "کیلوگرم",
+                ar: "كيلوغرام"
+            },
+            priceKey: "wool_10kg"
+        }
+
     ];
 
     let html = '';
-    let lastCat = '';
+    let lastCategory = '';
 
-    for (let p of productsList) {
-        let cat = '';
-        if (p.row === 1) cat = ' سیم مفتول سیاه';
-        else if (p.row === 4) cat = ' مفتول گالوانیزه';
-        else if (p.row === 8) cat = 'مفتول آنیل شده';
-        else if (p.row === 10) cat = ' پشم آهن(سیم ظرفشویی)';
+    priceProducts.forEach(product => {
 
-        if (cat && cat !== lastCat) {
-            html += `<tr class="category-row"><td colspan="6"><strong>${cat}</strong></td></tr>`;
-            lastCat = cat;
+        if (product.category) {
+
+            const categoryTitle = product.category[currentLang];
+
+            if (categoryTitle !== lastCategory) {
+
+                html += `
+                <tr class="category-row">
+                    <td colspan="6">
+                        <strong>${categoryTitle}</strong>
+                    </td>
+                </tr>
+                `;
+
+                lastCategory = categoryTitle;
+            }
         }
 
-        const price = prices[p.priceKey] || 0;
-        html += `<tr>
-                    <td>${p.row}</td>
-                    <td>${p.name}</td>
-                    <td>${p.type}</td>
-                    <td>${p.unit}</td>
-                    <td class="price">${price.toLocaleString()}</td>
-                    <td><a href="index.html#contact" class="price-order">${t.price_request}</a></td>
-                </tr>`;
-    }
+        const price = prices[product.priceKey] || 0;
+
+        html += `
+        <tr>
+            <td>${product.row}</td>
+            <td>${product.name[currentLang]}</td>
+            <td>${product.type[currentLang]}</td>
+            <td>${product.unit[currentLang]}</td>
+            <td class="price">${price.toLocaleString()}</td>
+            <td>
+                <a href="index.html#contact" class="price-order">
+                    ${t.price_request}
+                </a>
+            </td>
+        </tr>
+        `;
+    });
+
     desktopBody.innerHTML = html;
 }
 
@@ -491,11 +865,16 @@ function initPriceTheme() {
 }
 
 // ========== اجرای اولیه ==========
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+
+    await loadTranslations();
+    switchLanguage(currentLang);
+
     const isPricePage = document.getElementById('desktopPriceBody') !== null;
     const isHomePage = document.getElementById('productsGrid') !== null;
 
     if (isHomePage) {
+
         typeEffect();
         displayProducts();
         initTheme();
@@ -504,10 +883,17 @@ document.addEventListener('DOMContentLoaded', () => {
         initModal();
 
         const statsSection = document.getElementById('stats');
+
         if (statsSection) {
             const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => { if (entry.isIntersecting) { animateNumbers(); observer.disconnect(); } });
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateNumbers();
+                        observer.disconnect();
+                    }
+                });
             });
+
             observer.observe(statsSection);
         }
     }
@@ -515,9 +901,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isPricePage) {
         initPriceTheme();
         initMobileMenu();
-        loadPrices();
+        await loadPrices();
     }
 
-    // لود کردن ترجمه‌ها (بعد از راه‌اندازی اولیه)
-    loadTranslations();
 });
