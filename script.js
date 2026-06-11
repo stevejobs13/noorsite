@@ -192,8 +192,7 @@ function updateStaticTexts(lang) {
     const statLabels = document.querySelectorAll('.stat-label');
     if (statLabels[0]) statLabels[0].textContent = t.stats_experience;
     if (statLabels[1]) statLabels[1].textContent = t.stats_customers;
-    if (statLabels[2]) statLabels[2].textContent = t.stats_products;
-    if (statLabels[3]) statLabels[3].textContent = t.stats_cities;
+    if (statLabels[2]) statLabels[2].textContent = t.stats_cities;
 
     // About Section
     const aboutBadge = document.querySelector('.section-title-left .badge');
@@ -220,8 +219,8 @@ function updateStaticTexts(lang) {
     if (contactItems[0]) contactItems[0].textContent = t.contact_phone;
     if (contactItems[1]) contactItems[1].textContent = t.contact_email;
     if (contactItems[2]) contactItems[2].textContent = t.contact_factory_address;
-    if (contactAddressP[3])
-        contactAddressP[3].textContent = t.contact_factory_location;
+    if (contactAddressP[2])
+        contactAddressP[2].textContent = t.contact_factory_location;
 
 
     // Footer
@@ -236,7 +235,7 @@ function updateStaticTexts(lang) {
     const priceNote = document.querySelector('.price-note-warning');
     const priceFooterTitles = document.querySelectorAll('.price-note-box strong');
     const priceFooterDescs = document.querySelectorAll('.price-note-box p');
-    if (pricePageTitle) pricePageTitle.innerHTML = `${t.price_page_title} <span style="color: #ffd700;">مفتولی</span>`;
+    if (pricePageTitle) pricePageTitle.textContent = t.price_page_title;
     if (pricePageDesc) pricePageDesc.textContent = t.price_page_desc;
     if (priceNote) priceNote.innerHTML = `<i class="fas fa-info-circle"></i> <strong>نکته مهم:</strong> ${t.price_note}`;
     if (priceFooterTitles[0]) priceFooterTitles[0].textContent = t.price_footer_ship_title;
@@ -255,6 +254,27 @@ function updateStaticTexts(lang) {
 
         backHomeBtn.innerHTML =
             `<i class="fas ${icon}"></i> ${t.back_to_home}`;
+    }
+    // جدول قیمت
+    if (document.getElementById('thRow')) {
+        document.getElementById('thRow').textContent = t.price_table_row;
+        document.getElementById('thName').textContent = t.price_table_name;
+        document.getElementById('thType').textContent = t.price_table_type;
+        document.getElementById('thUnit').textContent = t.price_table_unit;
+        document.getElementById('thPrice').textContent = t.price_table_price;
+        document.getElementById('thOrder').textContent = t.price_table_order;
+    }
+
+// سئوی صفحه قیمت
+    if (document.getElementById('seoTitle1')) {
+        document.getElementById('seoTitle1').textContent = t.price_seo_title1;
+        document.getElementById('seoText1').textContent = t.price_seo_text1;
+
+        document.getElementById('seoTitle2').textContent = t.price_seo_title2;
+        document.getElementById('seoText2').textContent = t.price_seo_text2;
+
+        document.getElementById('seoTitle3').textContent = t.price_seo_title3;
+        document.getElementById('seoText3').textContent = t.price_seo_text3;
     }
 }
 
